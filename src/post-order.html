@@ -74,16 +74,16 @@
         <div class="container">
             <h1 class="section-title">Rekomendasi Kuliner</h1>
             <div class="container food-card">
-                <div class="image"></div>
+                <div class="image" id="foodRec-image"></div>
                 <div class="details">
-                    <h2 class="card-title"> Pogo Restaurant </h2>
+                    <h2 class="card-title" id="foodRec-name"> Pogo Restaurant </h2>
                     <div class="metadata-wrapper">
                         <span class="metadata-small flex">
                             <div>
                                 <i class="icofont-ui-rate-blank"></i>
                             </div>
                             <div class="pdl-1rm">
-                                5
+                                <span id="foodRec-rating">5</span>
                             </div>
                         </span>
                         <span class="metadata-small flex">
@@ -91,7 +91,7 @@
                                 <i class="icofont-phone"></i>
                             </div>
                             <div class="pdl-1rm">
-                                +62 22 7310799
+                                <span id="foodRec-phone">+62 22 7310799</span>
                             </div>
                         </span>
                         <span class="metadata-small flex">
@@ -99,7 +99,7 @@
                                 <i class="icofont-dollar"></i>
                             </div>
                             <div class="pdl-1rm">
-                                $65,000 - $250,000
+                                <span id="foodRec-price"> $65,000 - $250,000 </span>
                             </div>
                         </span>
                     </div>
@@ -108,7 +108,7 @@
                             <i class="icofont-ui-email"></i>
                         </div>
                         <div class="pdl-1rm">
-                            info@thepapandayan.com
+                            <span id="foodRec-email"> info@thepapandayan.com </span>
                         </div>
                     </span>
                     <span class="metadata-big flex">
@@ -116,11 +116,11 @@
                             <i class="icofont-location-pin"></i>
                         </div>
                         <div class="pdl-1rm">
-                             Jl. Gatot Subroto No.83 The Papandayan Hotel, Bandung 40262 Indonesia
+                            <span id="foodRec-address">Jl. Gatot Subroto No.83 The Papandayan Hotel, Bandung 40262 Indonesia</span>
                         </div>
                     </span>
                     <span>
-                        <p>
+                        <p id="foodRec-description">
                             Pago Restaurant is a new dining experience concept serving authentic Indonesian, Asian and Western specialties.
                             Open for breakfast, lunch, and dinner, this restaurant offers extensive buffet and a la carte options.
                         </p>
@@ -132,5 +132,27 @@
             <span>This recommendation is powered by<br><b>Easy Yummy</b></span>
         </div>
     </section>
+
+    <script>
+        var request = new XMLHttpRequest();
+        request.open("GET", "data/response.json", false);
+        request.send(null)
+        var result = JSON.parse(request.responseText);
+        var foodRec = result.data;
+
+        document.getElementById("foodRec-name").innerHTML = foodRec.name;
+        document.getElementById("foodRec-rating").innerHTML = foodRec.rating;
+        document.getElementById("foodRec-address").innerHTML = foodRec.address;
+        document.getElementById("foodRec-email").innerHTML = foodRec.email;
+        document.getElementById("foodRec-description").innerHTML = foodRec.description;
+        document.getElementById("foodRec-price").innerHTML = foodRec.price;
+        document.getElementById("foodRec-phone").innerHTML = foodRec.phone;
+        document.getElementById("foodRec-image").style.backgroundImage = "url('" + foodRec.image_url + "')";
+
+        var cols = document.getElementsByClassName('image');
+        for(i = 0; i < cols.length; i++) {
+            cols[i].style.backgroundImage = "url('" + foodRec.image_url + "')";
+        }
+    </script>
 </body>
 </html>
