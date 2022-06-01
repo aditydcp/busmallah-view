@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans';
     font-style: normal;
@@ -239,6 +243,12 @@ span .menu .navbar-brand {
     color: #ffffff;
 }
 
+#hero-post {
+    padding: 300px;
+    background-image: url(../img/kym-ellis-T6oVsafaQfQ-unsplash.jpg);
+    color: #ffffff;
+}
+
 .hero-overlay {
     opacity: 0.5;
     background-color: rgb(35, 35, 35);
@@ -386,3 +396,32 @@ nav .navbar-btn {
         height: 100%;
     }
 }
+
+.navigate-next {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.navigate-next .icon {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.navigate-next .navigate-text {
+    font-size: 1.2rem;
+}
+
+#food {
+    padding: 50px 0;
+}
+
+
+

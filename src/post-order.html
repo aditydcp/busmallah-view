@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Busmallah | Insya'allah Sampai Tujuan </title>
+
+    <script>
+        function openInNewTab(url) {
+            window.open(url, '_blank').focus();
+        }
+
+        function goToFood() {
+            document.getElementById("food").scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="assets/aditydcp/img/favicon.ico">
+    <link rel="stylesheet" href="assets/aditydcp/css/main.css">
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+</head>
+<body>
+    <section id="menu">
+        <nav class="navbar fixed-top transparent-bg align-items-center">
+            <div class="menu-content-top">
+                <div class="menu-logo">
+                    <div class="navbar-brand">
+                        <span class="navbar-logo">
+                            <a href="index.html">
+                                <img class="navbar-logo-img" src="assets/aditydcp/img/busmallah-logo.png" alt="Busmallah">
+                            </a>
+                        </span>
+                        <span class="navbar-caption-wrap">
+                            <a class="brand-name" href="index.html">
+                                <span id="brand"> Busmallah </span>
+                                <span class="doa" id="tagline"> Insya'allah sampai tujuan~ </span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <div class="navbar-btn">
+                        <a class="btn btn-primary">
+                            <span>
+                                Beli Tiket Sekarang <i class="icofont-rounded-right icon-white"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="hero-post">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1 class="section-title">Udah tau mau ngapain aja di sana?</h1>
+            <h3 class="section-subtitle">Cari tahu lebih banyak soal apa aja yang ada di kota tujuanmu!</h3>
+            <div class="row justify-content-center align-center">
+                <div class="media-container-column col-lg-12 col-md-10 col-sm-12 align-center">
+                    <div class="row">
+                        <div class="relative col-lg-3 col-md-12">
+                            <button type="button" onclick="openInNewTab('https://hotello-app.herokuapp.com/')" class="btn form-control input btn-primary" target="_blank">
+                                Cari Hotel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigate-next" onclick="goToFood()">
+            <span class="navigate-text">Rekomendasi Tempat Makan<br>di Lokasi Tujuan</span>
+            <i class="icofont-rounded-down icon"></i>
+        </div>
+    </section>
+    <section id="food">
+        <div class="container">
+            <h1 class="section-title">Rekomendasi Kuliner</h1>
+            <div class="food-wrapper">
+                <div class="food-card">
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <span class="gb align-center">This recommendation is powered by<br><span>Easy Yummy</span></span>
+        </div>
+    </section>
+</body>
+</html>
