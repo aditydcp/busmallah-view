@@ -423,5 +423,56 @@ nav .navbar-btn {
     padding: 50px 0;
 }
 
+.food-card {
+    width: inherit;
+    border: 2px solid #656565;
+    border-radius: 24px;
 
+    margin: 2rem 0;
+    padding-left: 0;
 
+    display: inline-flex;
+}
+
+.food-card > * {
+    margin: 1rem 2rem;
+}
+
+.food-card .image {
+    max-height: 640px;
+    border-radius: 24px;
+    width: 100%;
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/15/7a/f4/02/pago-balcony.jpg");
+    background-clip: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 0 3rem 0 0;
+}
+
+.metadata-wrapper {
+    display: inline-flex;
+    margin: .5rem 0;
+}
+
+.metadata-small {
+    padding: 0 1rem;
+}
+
+.metadata-big {
+    display: block;
+    padding: 0 1rem;
+    margin: .5rem 0;
+}
+
+.flex {
+    display: inline-flex;
+}
+
+.pdl-1rm {
+    padding-left: .5rem;
+}
+
+.gb {
+    padding: 1rem;
+}
