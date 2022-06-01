@@ -419,11 +419,11 @@ nav .navbar-btn {
     font-size: 1.2rem;
 }
 
-#food {
+#food, #popular {
     padding: 50px 0;
 }
 
-.food-card {
+.food-card, .popular-card {
     width: inherit;
     border: 2px solid #656565;
     border-radius: 24px;
@@ -434,20 +434,28 @@ nav .navbar-btn {
     display: inline-flex;
 }
 
-.food-card > * {
+.food-card, .popular-card > * {
     margin: 1rem 2rem;
 }
 
-.food-card .image {
+.food-card .image, .popular-card .image {
     max-height: 640px;
     border-radius: 24px;
     width: 100%;
-    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/15/7a/f4/02/pago-balcony.jpg");
+
     background-clip: inherit;
     background-repeat: no-repeat;
     background-size: cover;
 
     margin: 0 3rem 0 0;
+}
+
+.food-card .image {
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/15/7a/f4/02/pago-balcony.jpg");
+}
+
+.popular-card .image {
+    background-image: url(../img/chris-karidis-nnzkZNYWHaU-unsplash.jpg);
 }
 
 .metadata-wrapper {
