@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     margin-right: -15px;
     margin-left: -15px;
-    margin: 0.5rem -15px;
+    margin: 1rem -15px;
 }
 
 .media-container-column {
@@ -248,6 +248,10 @@ span .menu .navbar-brand {
     right: 0;
     top: 0;
     z-index: 0;
+}
+
+.pdr-50px {
+    padding-right: 50px;
 }
 
 .navbar-logo {
@@ -349,8 +353,8 @@ nav .navbar-btn {
 
 .hero-search {
     position: absolute;
-    right: 30px;
-    top: 12px;
+    right: 15px;
+    top: 10px;
     z-index: 100;
     color: #565656;
 }
