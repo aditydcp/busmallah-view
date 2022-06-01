@@ -1,0 +1,19 @@
+{
+    "status" : true,
+    "result" : {
+        "data" : [
+            {
+                "name" : "Pogo Restaurant",
+                "rating" : "5.0",
+                "open_now_text" : "Closes in 1 min",
+                "price" : "$65,000 - $250,000",
+                "description" : "Pago Restaurant is a new dining experience concept serving authentic Indonesian, Asian and Western specialties. Open for breakfast, lunch, and dinner, this restaurant offers extensive buffet and a la carte options.",
+                "phone" : "+62 22 7310799",
+                "email" : "info@thepapandayan.com",
+                "address" : "Jl. Gatot Subroto No.83 The Papandayan Hotel, Bandung 40262 Indonesia",
+                "image_url" : "https://media-cdn.tripadvisor.com/media/photo-o/15/7a/f4/02/pago-balcony.jpg",
+                "num_reviews" : "759"
+            }
+        ]
+    }
+}
